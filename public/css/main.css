@@ -1,0 +1,257 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+body{
+	font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.topo{
+	background-image: url(../img/capa-madmax2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+    padding: 20px 196px;
+	height: 90vh;
+}
+.topo:after{
+    background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% );
+    content: "";
+    height: 90%;
+    left: 0;
+     position: absolute; 
+    top: 0;
+    width: 100%;
+}
+.navContainer{
+	display: flex;	
+	justify-content: space-between;
+	align-items: center	
+}
+.nav-lista{
+    list-style: none;/* tira os pontos */
+	display: flex;
+	margin: 0;
+    padding: 0;
+
+}
+
+.nav-lista li{
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0px 25px;/* 0 px para cima e para baixo 5px para esquerda e direita*/
+    cursor: pointer;
+}
+.nav-lista li:hover{
+    color: #e7c459;
+}
+.usuario{
+	display: flex; 
+    justify-content: flex-start; 
+     align-items: center;
+
+}
+.nav-usuarioFoto img{
+	border-radius: 100%;
+	height: 45px;	
+	margin-right: 15px;
+	
+    width: 45px;
+}
+.nav-name-userPhoto{
+	color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.header-titulo{
+	color: #fff;
+    font-size: 6.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+.header-corpo{
+    position: relative;
+    z-index: 2;
+
+}
+.header-genero{
+	display: flex;
+    margin: 15px 0 30px;
+    font-size: 13px;
+}
+.header-genero a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+.header-genero a:hover{
+color: #e7c459;
+}
+
+.header-botao {
+    display: inline-block;
+    padding: 15px 50px;
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #e4bb23;
+    border-radius: 40px;
+    position: relative;
+}
+.header-botao:hover{
+	 background-color: #bc9a1d;
+	}
+
+.header-botao i{
+	font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.header-info{
+	padding: 20px 0;
+    font-size: 1.4em;
+    color: #fff;
+
+}
+.data{
+	color: #e4bb23;
+}
+
+.main-lista{
+	align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+	padding: 0 20px;
+	background-color: #f2f2f2;
+}
+.main-lista li{
+	padding: 25px 23px;;
+	color: #e4bb23;
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;/*Quebra de linha*/
+    justify-content: center;   
+    background-color: #f2f2f2
+}
+.card{
+    margin-right: 20px;
+    width: 250px;
+    margin-top: 30px;  
+    margin-bottom: 30px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+   .card img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+   }
+   .card-titulo{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+ }
+ .card-genero a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e4bb23;
+ }
+  .card-footer{	  
+    padding: 10px;
+    width: 100%;
+    
+	  
+  }
+  .card-header img{
+	width: 100%;
+   }
+   .genero{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #e4bb23
+   }
+   .card-footer-nota-rodape{
+    display: flex;
+    font-size: 2em;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+   
+} 
+.card-footer-nota-rodape i{
+color: #ccc;
+cursor: pointer;
+}
+.card-footer-nota-rodape i:hover{
+    color: #e74c3c;
+    
+    }
+    .rodape-container{
+        background-color: #fff;
+        color: #bababa;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%
+    }
+    .rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+    }
+    .rodapeLista ul{
+        display: flex;
+        list-style: none;
+    }
+    .rodapeLista a{
+    padding: 0 16px;
+    color: #ccc;
+    cursor: pointer;
+    
+    
+    font-size: 3em;
+    justify-content: space-between;
+    text-align: center
+    }
+   .rodapeimg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 136px;
+   }
+   .rodapeimg ul{
+    padding: 0;
+    list-style: none;
+    display: flex
+
+   }
+   .rodapeimg a{
+    font-size: 30px;
+    font-size: 30px;
+    padding: 0 12px;
+    color: #ccc;
+
+   }
+   
